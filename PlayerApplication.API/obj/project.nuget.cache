@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "60HeghsURKHybUrLZ04thOS49DkBrh0Vc3dwQF6YffEYkz7WPdr6aV2mZaYdBOOPnb3Q4O6uH0DjkvwtYAie4w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\willi\\source\\repos\\ludus_service_players\\PlayerApplication.API\\PlayerApplication.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\willi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512"
+  ],
+  "logs": []
+}
