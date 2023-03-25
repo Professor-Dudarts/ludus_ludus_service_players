@@ -1,0 +1,6 @@
+C:\Users\willi\source\repos\Player.API\Player.Infraestructure\bin\Debug\Player.Infraestructure.dll
+C:\Users\willi\source\repos\Player.API\Player.Infraestructure\bin\Debug\Player.Infraestructure.pdb
+C:\Users\willi\source\repos\Player.API\Player.Infraestructure\obj\Debug\Player.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\willi\source\repos\Player.API\Player.Infraestructure\obj\Debug\Player.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\willi\source\repos\Player.API\Player.Infraestructure\obj\Debug\Player.Infraestructure.dll
+C:\Users\willi\source\repos\Player.API\Player.Infraestructure\obj\Debug\Player.Infraestructure.pdb
