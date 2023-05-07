@@ -312,6 +312,7 @@ C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Mi
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
+C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -319,6 +320,7 @@ C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Mi
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
@@ -346,6 +348,7 @@ C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Nu
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\NuGet.ProjectModel.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\NuGet.Protocol.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\NuGet.Versioning.dll
+C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\RestSharp.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -530,8 +533,10 @@ C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\ru
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Player.Domain.dll
+C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Player.Infraestructure.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Player.Utils.dll
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Player.Domain.pdb
+C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Player.Infraestructure.pdb
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Player.Utils.pdb
 C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Player.Utils.dll.config
 C:\Users\willi\source\repos\ludus_service_players\Player.API\obj\Debug\net6.0\Player.API.csproj.AssemblyReference.cache
@@ -555,6 +560,3 @@ C:\Users\willi\source\repos\ludus_service_players\Player.API\obj\Debug\net6.0\re
 C:\Users\willi\source\repos\ludus_service_players\Player.API\obj\Debug\net6.0\Player.API.pdb
 C:\Users\willi\source\repos\ludus_service_players\Player.API\obj\Debug\net6.0\Player.API.genruntimeconfig.cache
 C:\Users\willi\source\repos\ludus_service_players\Player.API\obj\Debug\net6.0\ref\Player.API.dll
-C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Player.Infraestructure.dll
-C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\Player.Infraestructure.pdb
-C:\Users\willi\source\repos\ludus_service_players\Player.API\bin\Debug\net6.0\RestSharp.dll

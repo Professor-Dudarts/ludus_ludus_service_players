@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Player.Domain.Services;
-using Player.Infraestructure.Contexts;
 using Player.Infraestructure.Model;
 
 namespace Player.API.Controllers
@@ -35,35 +34,36 @@ namespace Player.API.Controllers
 			var response = await _positionService.GetPositions(acronym);
 
 			if (response == null)
-				return BadRequest("Acronym not found");
+				return NotFound();
 
 			return response;
 		}
 
 		[HttpPost]
+		[ApiExplorerSettings(IgnoreApi = true)]
 		public async Task<ActionResult<PlayerFunction>> CreatePosition([FromBody] PlayerFunction function)
 		{
-			var positionBody = new PlayerFunction
-			{
-				AcronymFunction = function.AcronymFunction,
-				NameFunction = function.NameFunction,
-			};
-
-			var newPosition = await _positionService.CreatePosition(positionBody);
+			var newPosition = await _positionService.CreatePosition(function);
 			return CreatedAtAction(nameof(CreatePosition), new { id = newPosition.Id }, newPosition);
 		}
 
 		[HttpPut]
+		[ApiExplorerSettings(IgnoreApi = true)]
 		public async Task<ActionResult> UpdatePosition(int id, [FromBody] PlayerFunction function)
 		{
 			if (id != function.Id)
-				return BadRequest();
+				return BadRequest("The entered key id is different from the object's body key.");
 
-			await _positionService.UpdatePosition(function);
-			return StatusCode(200);
+			try
+			{
+				await _positionService.UpdatePosition(function);
+				return StatusCode(200);
+			}
+			catch (Exception ex)
+			{
+				return BadRequest(ex.Message);
+			}
 		}
-
-
 
 	};
 }

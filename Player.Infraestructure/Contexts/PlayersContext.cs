@@ -69,11 +69,6 @@ namespace Player.Infraestructure.Contexts
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
-                //entity.HasOne(d => d.FkFunction)
-                //    .WithMany(p => p.Players)
-                //    .HasForeignKey(d => d.FkFunctionId)
-                //    .OnDelete(DeleteBehavior.ClientSetNull)
-                //    .HasConstraintName("FK_Function_Id");
             });
 
             modelBuilder.Entity<PlayerFunction>(entity =>
