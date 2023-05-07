@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Player.Domain.Services;
+using Player.Infraestructure.Contexts;
+using Player.Infraestructure.Model;
 
 namespace Player.API.Controllers
 {
@@ -12,19 +14,33 @@ namespace Player.API.Controllers
 
 	public class PlayerController : ControllerBase
 	{
-		private PlayerBaseService _PlayerService;
+		private PlayerService _playerService;
 
 		public PlayerController()
 		{
-			_PlayerService = new PlayerService();
+			_playerService = new PlayerService();
+		}
+
+
+		[HttpGet]
+		[Route("Positions")]
+		public async Task<IEnumerable<PlayerFunction>> PlayerPositions()
+		{
+			return await _playerService.GetPositions();
 		}
 
 		[HttpGet]
-		[Route("Teste")]
-		public string Teste()
+		[Route("Positions/acronym")]
+		public async Task<ActionResult<PlayerFunction>> GetCoins(string acronym)
 		{
-			return "Testado";
+			var response = await _playerService.GetPositions(acronym);
+
+			if (response == null)
+				return BadRequest();
+
+			return response;
 		}
+
 
 	};
 }

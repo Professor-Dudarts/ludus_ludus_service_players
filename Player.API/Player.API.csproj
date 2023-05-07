@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Player.Domain\Player.Domain.csproj" />
+    <ProjectReference Include="..\Player.Infraestructure\Player.Infraestructure.csproj" />
     <ProjectReference Include="..\Player.Utils\Player.Utils.csproj" />
   </ItemGroup>
 

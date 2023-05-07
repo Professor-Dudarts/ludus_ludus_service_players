@@ -56,16 +56,6 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Player.Domain\Player.Domain.csproj">
-      <Project>{ddbaf82b-734b-45cc-b493-c2748fde5265}</Project>
-      <Name>Player.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Player.Infraestructure\Player.Infraestructure.csproj">
-      <Project>{65a78924-2d26-4af3-a6be-9f2db88f1858}</Project>
-      <Name>Player.Infraestructure</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

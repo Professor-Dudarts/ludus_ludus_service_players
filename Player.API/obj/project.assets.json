@@ -2067,6 +2067,19 @@
           }
         }
       },
+      "RestSharp/108.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -3781,9 +3794,13 @@
       },
       "Player.Domain/1.0.0": {
         "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.7",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
           "Player.Infraestructure": "1.0.0",
-          "Player.Utils": "1.0.0"
+          "RestSharp": "108.0.2"
         },
         "compile": {
           "bin/placeholder/Player.Domain.dll": {}
@@ -3794,6 +3811,12 @@
       },
       "Player.Infraestructure/1.0.0": {
         "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.7",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7"
+        },
         "compile": {
           "bin/placeholder/Player.Infraestructure.dll": {}
         },
@@ -6755,6 +6778,24 @@
         "lib/netstandard2.0/NuGet.Versioning.xml",
         "nuget.versioning.6.2.1.nupkg.sha512",
         "nuget.versioning.nuspec"
+      ]
+    },
+    "RestSharp/108.0.2": {
+      "sha512": "zI1lzI+Jjzl6bcicyUYfLIGmmOAdJRkYepMnSPzrxd1o9RxztPaR/blUOmY8BpXdN3I+XlK9dtwCYRGCxvaODw==",
+      "type": "package",
+      "path": "restsharp/108.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/RestSharp.dll",
+        "lib/net5.0/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.108.0.2.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -10854,6 +10895,7 @@
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.17.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.7",
       "Player.Domain >= 1.0.0",
+      "Player.Infraestructure >= 1.0.0",
       "Player.Utils >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -10887,6 +10929,9 @@
           "projectReferences": {
             "C:\\Users\\willi\\source\\repos\\ludus_service_players\\Player.Domain\\Player.Domain.csproj": {
               "projectPath": "C:\\Users\\willi\\source\\repos\\ludus_service_players\\Player.Domain\\Player.Domain.csproj"
+            },
+            "C:\\Users\\willi\\source\\repos\\ludus_service_players\\Player.Infraestructure\\Player.Infraestructure.csproj": {
+              "projectPath": "C:\\Users\\willi\\source\\repos\\ludus_service_players\\Player.Infraestructure\\Player.Infraestructure.csproj"
             },
             "C:\\Users\\willi\\source\\repos\\ludus_service_players\\Player.Utils\\Player.Utils.csproj": {
               "projectPath": "C:\\Users\\willi\\source\\repos\\ludus_service_players\\Player.Utils\\Player.Utils.csproj"

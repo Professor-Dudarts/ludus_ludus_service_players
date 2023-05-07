@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Player.API.Authentication;
 using Player.API.Filters;
+using Player.Infraestructure.Contexts;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +16,8 @@ builder.Services.AddControllers(options => options.Filters.Add(new ExceptionFilt
 IConfigurationRoot configuration = new ConfigurationBuilder()
 	.AddJsonFile("appsettings.json")
 	.Build();
+
+builder.Services.AddDbContext<PlayersContext>(options => options.UseSqlServer(configuration.GetConnectionString("PlayerConnection")));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
