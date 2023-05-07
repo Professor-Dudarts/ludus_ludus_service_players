@@ -2,18 +2,18 @@
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Player.API.Authentication;
-using Player.Domain.Model;
+using Player.Domain.Model.Authentication;
 
 namespace Player.API.Controllers
 {
 
-	[Route("api/[controller]")]
+    [Route("api/[controller]")]
 	[ApiController]
 	[EnableCors]
-	public class AuthenticationController : ControllerBase
+	public class authenticationController : ControllerBase
 	{
 		private JwtAuthenticationManager _JwtAuthenticationManager;
-		public AuthenticationController(JwtAuthenticationManager JwtAuthenticationManager)
+		public authenticationController(JwtAuthenticationManager JwtAuthenticationManager)
 		{
 			_JwtAuthenticationManager = JwtAuthenticationManager;
 		}

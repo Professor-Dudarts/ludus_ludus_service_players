@@ -6,9 +6,9 @@ using System.Net;
 namespace Player.Test
 {
 	[TestClass]
-	public class PlayerTest
+	public class PositionTest
 	{
-		private PlayerService _playerService = new PlayerService();
+		private PositionService _positionService = new PositionService();
 
 		[TestMethod]
 		public void TestGetPositionList()
@@ -16,7 +16,7 @@ namespace Player.Test
 			BaseResponse response = new BaseResponse();
 			try
 			{
-				response.Data = _playerService.GetPositions().Result;
+				response.Data = _positionService.GetPositions().Result;
 				response.Message = "Task Finished";
 				response.HttpStatusCode = HttpStatusCode.OK;
 			}
@@ -35,7 +35,7 @@ namespace Player.Test
 			BaseResponse response = new BaseResponse();
 			try
 			{
-				response.Data = _playerService.GetPositions("e").Result;
+				response.Data = _positionService.GetPositions("MEI").Result;
 				response.Message = "Task Finished";
 				response.HttpStatusCode = HttpStatusCode.OK;
 			}

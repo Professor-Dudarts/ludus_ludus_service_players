@@ -2,11 +2,11 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using System.Security.Claims;
-using Player.Domain.Model;
+using Player.Domain.Model.Authentication;
 
 namespace Player.API.Authentication
 {
-	public class JwtAuthenticationManager
+    public class JwtAuthenticationManager
 	{
 		private readonly IConfiguration _configuration;
 
