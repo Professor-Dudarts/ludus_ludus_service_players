@@ -13,4 +13,4 @@ Banco de dados: SQL Server (AWS)
 <br>
 Swagger
 <br>
-Autentitação JwT
+Autenticação JwT
