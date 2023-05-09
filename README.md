@@ -4,7 +4,7 @@ Microserviço do projeto de aplicativo de futebol Ludus que tem a finalidade de 
 
 # Diagrama de Classes
 
-![Diagrama](https://user-images.githubusercontent.com/70587854/236694948-79482512-d7c3-4655-9520-29a0ee8fef60.png)
+![Diagrama1](https://user-images.githubusercontent.com/70587854/236971964-5638e7d1-8add-4e19-820a-139370dd7b9f.png)
 
 # Arquitetura do microserviço
 Linguagem de Desenvolvimento: C#
