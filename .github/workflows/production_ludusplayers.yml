@@ -1,0 +1,51 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Build and deploy container app to Azure Web App - ludusplayers
+
+on:
+  push:
+    branches:
+      - production
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: 'ubuntu-latest'
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: Log in to registry
+      uses: docker/login-action@v2
+      with:
+        registry: https://ludusapicontainer.azurecr.io/
+        username: ${{ secrets.AzureAppService_ContainerUsername_d6ca2c67029c499ab4094c89dd8046c3 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_9ec333dfac7c4ad294534ea7799e40b7 }}
+
+    - name: Build and push container image to registry
+      uses: docker/build-push-action@v3
+      with:
+        push: true
+        tags: ludusapicontainer.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_d6ca2c67029c499ab4094c89dd8046c3 }}/ludus_service_players:${{ github.sha }}
+        file: ./Dockerfile
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: 'production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    steps:
+    - name: Deploy to Azure Web App
+      id: deploy-to-webapp
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'ludusplayers'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f067fdedfa8d449eb3358e5076f1d697 }}
+        images: 'ludusapicontainer.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_d6ca2c67029c499ab4094c89dd8046c3 }}/ludus_service_players:${{ github.sha }}'
